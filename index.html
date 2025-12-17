@@ -10,42 +10,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <title>Serene Sips</title>
   </head>
   <body>
     <!--header section-->
     <header id="header">
-      <h1>Welcome to Serene Sips</h1>
-      <p>Indulge in the finest coffee experience crafted just for you.</p>
-      <a href="#our-menu">Expore Our Menu</a>
+      <div class="video-bg">
+        <video autoplay muted loop playsinline>
+          <source src="images/video-coffee.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content">
+        <h1>Welcome to Serene Sips</h1>
+        <p>Indulge in the finest coffee experience crafted just for you.</p>
+        <a href="#our-menu">Explore Our Menu</a>
+      </div>
     </header>
 
     <!--navi section-->
-    <nav>
+    <nav class="nav">
+      <img src="images/home.png" alt="Home" />
       <a href="#header">Home</a>
+      <img src="images/menu.png" alt="Menu" />
       <a href="#our-menu">Menu</a>
+      <img src="images/about-us.png" alt="MenuAbout-us" />
       <a href="#about-us">About Us</a>
+      <img src="images/contact-us.png" alt="Contact" />
       <a href="#contact-us">Contact</a>
     </nav>
+
     <!--our menu section-->
     <section id="our-menu">
       <h2>Our Menu</h2>
       <div class="menu-list">
-        <h3>Bubble_Tea Selections</h3>
+        <h3>Coffee Selections</h3>
 
         <!-- Matcha -->
         <div class="card-container">
           <div class="card">
-            <img
-              src="images/matcha-bubble-tea.jpg"
-              alt=""
-              class="card-image-top"
-            />
+            <img src="images/americo.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-title">Matcha</h4>
-              <p>
-                - Sweet and creamy bubble tea. <br />
+              <h4 class="card-title">Expresso</h4>
+              <p class="card-text">
+                - Freshing for the whole day. <br />
                 Perfect for anyone who loves a smooth and refreshing treat.<br />
                 <span class="price"> $2.50</span>
               </p>
@@ -55,16 +64,13 @@
 
           <!-- Mango -->
           <div class="card">
-            <img
-              src="images/mango-bubble-tea.jpg"
-              alt=""
-              class="card-image-top"
-            />
+            <img src="images/cappuccino.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-title">MANGO</h4>
-              <p>
-                - Fresh and fruity mango bubble tea. <br />
-                Perfect for anyone who loves a sweet tropical twist. <br />
+              <h4 class="card-title">Lattee</h4>
+              <p class="card-text">
+                - Freshing for the whole day. <br />
+                Perfect for anyone who loves a smooth and refreshing treat.
+                <br />
                 <span class="price"> $2.70</span>
               </p>
               <button class="btn-order">order</button>
@@ -73,16 +79,13 @@
 
           <!-- Strawberry -->
           <div class="card">
-            <img
-              src="images/strawberr-bubble-tea.webp"
-              alt=""
-              class="card-image-top"
-            />
+            <img src="images/lattee.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-text">Strawberry</h4>
-              <p>
-                - Sweet and refreshing strawberry bubble tea. <br />
-                Perfect for anyone who loves a fruity and delightful sip.<br />
+              <h4 class="card-title">Cappucino</h4>
+              <p class="card-text">
+                - Freshing for the whole day. <br />
+                Perfect for anyone who loves a smooth and refreshing treat.
+                <br />
                 <span class="price"> $2.60</span>
               </p>
               <button class="btn-order">order</button>
@@ -91,16 +94,12 @@
 
           <!-- Taro -->
           <div class="card">
-            <img
-              src="images/taro-bubble-tea.jpg"
-              alt=""
-              class="card-image-top"
-            />
+            <img src="images/expresso.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-text">Taro</h4>
-              <p>
-                - Smooth and creamy taro bubble tea.<br />
-                Perfect for anyone who loves a sweet and comforting flavor.
+              <h4 class="card-title">Americo</h4>
+              <p class="card-text">
+                - Freshing for the whole day.<br />
+                Perfect for anyone who loves a smooth and refreshing treat.
                 <br />
                 <span class="price"> $2.75</span>
               </p>
@@ -113,10 +112,10 @@
         <div class="card-container">
           <!-- Chocolate_Cake -->
           <div class="card">
-            <img src="images/chocolate.webp" alt="" class="card-image-top" />
+            <img src="images/chocolate.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-text">Chocolate_Cake</h4>
-              <p>
+              <h4 class="card-title">Chocolate_Cake</h4>
+              <p class="card-text">
                 - Moist at the center, rich and decadent throughout <br />
                 made with premium dark chocolate. <br />
                 <span class="price"> $4.00</span>
@@ -127,10 +126,10 @@
 
           <!-- Strawberry_Cake -->
           <div class="card">
-            <img src="images/strawberry.jpeg" alt="" class="card-image-top" />
+            <img src="images/strawberry.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-text">Strawberry_Cake</h4>
-              <p>
+              <h4 class="card-title">Strawberry_Cake</h4>
+              <p class="card-text">
                 - Soft and fluffy inside, delicately sweet outside <br />
                 made with fresh, real strawberries. <br />
                 <span class="price"> $4.80</span>
@@ -141,10 +140,10 @@
 
           <!-- Mango_Cake -->
           <div class="card">
-            <img src="images/mango.webp" alt="" class="card-image-top" />
+            <img src="images/mango.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4 class="card-text">Mango_Cake</h4>
-              <p>
+              <h4 class="card-title">Mango_Cake</h4>
+              <p class="card-text">
                 - Soft and moist inside, naturally sweet outside <br />
                 made with fresh, ripe mangoes. <br />
                 <span class="price"> $3.50</span>
@@ -155,12 +154,12 @@
 
           <!-- Taro_Cake -->
           <div class="card">
-            <img src="images/taro.jpg" alt="" class="card-image-top" />
+            <img src="images/taro1.jpg" alt="" class="card-image-top" />
             <div class="card-body">
-              <h4>Taro_Cake</h4>
+              <h4 class="card-title">Taro_Cake</h4>
               <p class="card-text">
-                - Soft and creamy inside, gently sweet outside <br />
-                made with real, earthy taro. <br />
+                - Soft and moist inside, naturally sweet outside <br />
+                made with fresh, earthy taroes. <br />
                 <span class="price"> $3.10</span>
               </p>
               <button class="btn-order">order</button>
