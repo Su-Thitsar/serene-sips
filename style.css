@@ -65,16 +65,16 @@ header h1 {
   margin-bottom: 30px;
   color: white;
   font-style: italic;
-  text-shadow: 10px 0px 10px #49281a;
+  text-shadow: 20px 0px 20px #49281a;
 }
 
 header p {
   font-family: "Lato", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 30px;
   color: white;
-  font-style: italic;
-  text-shadow: 10px 0px 10px #49281a;
+  font-style: oblique;
+  text-shadow: 20px 0px 20px #49281a;
 }
 
 header a {
@@ -94,60 +94,35 @@ header a {
 
 .nav {
   display: flex;
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center */
-  gap: 10px;
-
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space BETWEEN groups */
   padding: 15px;
   background-color: #49281a;
-
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* Optional styling */
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.nav img {
-  width: 24px;
-  height: 24px;
-}
-
-nav a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  margin: 0 15px;
-}
-.nav {
+/* One group: icon + text */
+.nav-item {
   display: flex;
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center */
-  gap: 10px;
-
-  padding: 15px;
-  background-color: #49281a;
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* Optional styling */
-.nav a {
+  align-items: center;
+  gap: 8px; /* space between icon & text */
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
 
-.nav img {
-  width: 24px;
-  height: 24px;
+/* Icon size */
+.nav-item img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Hover effect */
+.nav-item:hover {
+  opacity: 0.8;
 }
 
 /* our- menu sec */
@@ -268,25 +243,46 @@ form div {
   border-radius: 8px;
   cursor: pointer;
 }
-footer {
-  text-align: center;
+
+.footer {
+  position: relative;
+  padding: 20px;
 }
 
-footer p {
+.footer p {
   text-align: center;
-  font-size: 0.9rem;
+  margin-bottom: 25px;
 }
-footer a {
-  display: block;
+
+/* Facebook icon */
+.social {
+  margin: 15px auto 0; /* center horizontally */
   width: 50px;
   height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social img {
+  width: 140px;
+  height: 60px;
+}
+
+.a-header {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
   text-decoration: none;
   background-color: white;
   color: #49281a;
+  border: 4px solid #49281a;
+  border-radius: 50%;
+  position: fixed;
   bottom: 25px;
   right: 20px;
-  padding-top: 10px;
-  border: 4px solid #49281a;
-  border-radius: 100%;
-  position: fixed;
+  font-size: 24px;
 }
